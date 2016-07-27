@@ -20,13 +20,21 @@
 			</div>
 			<div class="container">
 				<ul class="nav navbar-nav">
-					<li role="presentation" class="active"><a href="#top">Home</a></li>
-					<li role="presentation"><a href="#about">About</a></li>
-					<li role="presentation"><a href="#solutions">Solutions</a></li>
-					<li role="presentation"><a href="#advantages">Advantages</a></li>
-					<li role="presentation"><a href="#applications">Applications</a></li>
-					<li role="presentation"><a href="#testimonials">Testimonials</a></li>
-					<li role="presentation"><a href="#contact">Contact</a></li>
+					<li role="presentation" class="active hidden-xs"><a href="#top">Home</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#about">About</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#solutions">Solutions</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#advantages">Advantages</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#applications">Applications</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#projects">Projects</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#testimonials">Testimonials</a></li>
+					<li role="presentation" class="hidden-xs"><a href="#contact">Contact</a></li>
+					
+					<!-- Dropdown for mobile devices -->
+					<li class="dropdown visible-xs-block">
+						<ul>
+							
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -102,13 +110,58 @@
 			<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 		</div>
 		
+		<div id="projects">
+			<h1 class="text-center">Projects</h1>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<img src="images/GothamLampposts.jpg" class="img-responsive" alt="Gotham City Lampposts"/>
+					<h3>Gotham City</h3>
+					<h4>Street Lights / Corn Bulbs</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="images/RandomLaundromat.jpg" class="img-responsive" alt="Random Laundromat"/>
+					<h3>Some Laundromat</h3>
+					<h4>Indoor Lights / T8 Tubes</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="images/GymOutside.jpg" class="img-responsive" alt="A gym run by meatheads"/>
+					<h3>Meathead Gym</h3>
+					<h4>Outdoor Signage</h4>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<img src="images/GothamLampposts.jpg" class="img-responsive" alt="Gotham City Lampposts"/>
+					<h3>Gotham City</h3>
+					<h4>Street Lights / Corn Bulbs</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="images/RandomLaundromat.jpg" class="img-responsive" alt="Random Laundromat"/>
+					<h3>Some Laundromat</h3>
+					<h4>Indoor Lights / T8 Tubes</h4>
+				</div>
+				<div class="col-md-4">
+					<img src="images/GymOutside.jpg" class="img-responsive" alt="A gym run by meatheads"/>
+					<h3>Meathead Gym</h3>
+					<h4>Outdoor Signage</h4>
+				</div>
+			</div>
+		</div>
+		
 		<div id="testimonials">
 			<h1 class="text-center">Testimonials</h1>
 			<div class="row">
 				<div class="col-md-4">
-					<div>
-						<h3>Oliver Queen</h3>
-						<h4>Seattle, WA<h4>
+					<div class="row">
+						<div class="col-xs-3">
+							<img class="img-responsive img-circle" src="images/QueenCons.jpg"/>
+						</div>
+						<div class="col-xs-9">
+							<h3>Oliver Queen</h3>
+							<h4>Seattle, WA<h4>
+						</div>
 					</div>
 					<div>
 						<h3>Queen Consolidated</h3>
@@ -118,9 +171,14 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div>
-						<h3>Bruce Wayne</h3>
-						<h4>Gotham City, CT</h4>
+					<div class="row">
+						<div class="col-xs-3">
+							<img class="img-responsive img-circle" src="images/WayneEnt.jpg"/>
+						</div>
+						<div class="col-xs-9">
+							<h3>Bruce Wayne</h3>
+							<h4>Gotham City, CT</h4>
+						</div>
 					</div>
 					<div>
 						<h3>Wayne Enterprises</h3>
@@ -130,9 +188,14 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div>
-						<h3>Tony Stark</h3>
-						<h4>New York, NY</h4>
+					<div class="row">
+						<div class="col-xs-3">
+							<img class="img-responsive img-circle" src="images/StarkInd.jpg"/>
+						</div>
+						<div class="col-xs-9">
+							<h3>Tony Stark</h3>
+							<h4>New York, NY</h4>
+						</div>
 					</div>
 					<div>
 						<h3>Stark Technologies</h3>
@@ -189,8 +252,8 @@
 							<i class="glyphicon glyphicon-map-marker"></i>
 						</div>
 						<div class="col-xs-11">
-							<p>9999 Some Street</p>
-							<p>Some City, USSR</p>
+							<p>9999 Sesame Street</p>
+							<p>Gotham City, CT</p>
 							<p>99999</p>
 						</div>
 					</div>
@@ -232,6 +295,14 @@
 		
 		.navbar-header {
 			display: block;
+		}
+		
+		body{
+			background-color: lightgray;
+		}
+		
+		.container{
+			background-color: white;
 		}
 	</style>
 </body>
