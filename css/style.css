@@ -11,14 +11,16 @@ nav > div .container {
 
 .nav {
   background-color: #407f7f;
+  margin-left: -15px;
+  padding-left: 15px;
+}
+.nav > li > a {
   color: #003333;
 }
-.nav:hover {
-  background-color: #003333;
-  color: #669999;
-}
-.nav.active {
+.nav > li.active {
   background-color: #0d4d4d;
+}
+.nav > li.active > a {
   color: #669999;
 }
 
