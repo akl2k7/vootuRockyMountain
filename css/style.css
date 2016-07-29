@@ -17,6 +17,10 @@ nav > div .container {
 .nav > li > a {
   color: #003333;
 }
+.nav > li > a:hover {
+  background-color: #003333;
+  color: #669999;
+}
 .nav > li.active {
   background-color: #0d4d4d;
 }
