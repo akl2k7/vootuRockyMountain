@@ -12,6 +12,14 @@ nav > div .container {
 .nav {
   background-color: #669999;
   width: 100%;
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.nav > li {
+  float: none;
+  display: table-cell;
+  text-align: center;
 }
 .nav > li > a {
   color: #003333;
@@ -20,10 +28,14 @@ nav > div .container {
   background-color: #003333;
   color: #669999;
 }
-.nav > li.active {
+.nav > li.active, .nav > li:active {
   background-color: #0d4d4d;
 }
-.nav > li.active > a {
+.nav > li.active > a, .nav > li:active > a {
+  color: #669999;
+}
+.nav > li.active > a:focus, .nav > li:active > a:focus {
+  background-color: #0d4d4d;
   color: #669999;
 }
 
@@ -58,7 +70,9 @@ body {
   background-color: #ffd1aa;
   color: #552700;
   border-radius: 5px;
-  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
 }
 
 #testimonial-1 {
